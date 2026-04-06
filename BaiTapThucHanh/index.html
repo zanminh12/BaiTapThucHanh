@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Movie Discovery App</title>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <header>
+      <h1>🎬 Movie App</h1>
+      <button id="theme-toggle">🌙</button>
+    </header>
+
+    <div class="container">
+      <!-- SIDEBAR -->
+      <aside class="sidebar">
+        <h2>Bộ lọc</h2>
+
+        <input type="text" id="search" placeholder="🔍 Tìm phim..." />
+
+        <h3>Thể loại</h3>
+        <div id="genre-filters"></div>
+      </aside>
+
+      <!-- MAIN -->
+      <main>
+        <div id="movie-list"></div>
+      </main>
+    </div>
+
+    <!-- MODAL -->
+    <div id="modal" class="modal hidden">
+      <div class="modal-content">
+        <span id="close-modal">&times;</span>
+        <div id="modal-body"></div>
+      </div>
+    </div>
+
+    <script src="js/app.js"></script>
+  </body>
+</html>
